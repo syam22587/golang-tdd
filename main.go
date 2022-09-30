@@ -1,16 +1,12 @@
-package hello
+package main
 
-import "fmt"
-
-const HelloPrefix = "Hello, "
-
-func Hello(name string) string {
-	if name != "" {
-		return HelloPrefix + name
-	}
-	return HelloPrefix + "world"
-}
+import (
+	"fmt"
+	hello "golang-tdd/helloworld"
+)
 
 func main() {
-	fmt.Print(Hello("Syamm"))
+	fmt.Println("Main function...")
+
+	hello.Hello("voleti")
 }
